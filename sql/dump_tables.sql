@@ -1,0 +1,1 @@
+CREATE TABLE new_mytbl LIKE mytbl;
