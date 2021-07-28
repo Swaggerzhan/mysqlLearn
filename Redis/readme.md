@@ -96,6 +96,9 @@ set C++ Linux px 10 # 同上，存在10毫秒
 set C++ Windows xx  # 更新C++的值为Windows
 ```
 
+##### 发布订阅
+略
+
 ##### Redis数据类型
 
 type命令可以看到的数据类型是Redis想让看到的数据类型，内部还有很多编码用来实现这种`数据结构`。
@@ -231,6 +234,76 @@ discard # 中断事务
 如果执行发生错误，则事务将被强制结束。
 
 需要注意的是，如果错误的是逻辑错误，而不是语法错误，那么事务将继续执行，比如A关注B写成了A关注C，由于语法没有错误，所以事务正常执行，但是Redis并不支持回滚操作！
+
+
+## 客户端
+
+Redis有3种客户端，即普通客户端，slave客户端，pubsub客户端。
+
+Redis为每个客户的设定了一个指令输入输出缓冲区，
+
+
+`hard limit` 如果客户的输出缓冲区使用超过这个值，客户端将被立即关闭。
+`soft limit`和`soft seconds`如果客户端使用的输出缓冲区超过这个值，并且持续soft秒，则客户端被立即关闭。所以需要尽量增加slave客户端的输出缓冲区中的`hard limit`和`soft limit` `soft seconds` ，避免master大量写入而发生的kill掉slave客户端的问题。
+
+每个客户端都有他独自的结构体:
+
+```C++
+typedef struct redisClient{
+    list *reply; // 动态缓冲区
+    unsigned long reply_bytes; // 动态缓冲区列表长度(多少个节点)
+    int bufpos; // 固定缓冲区使用长度
+    char buf[REDIS_REPLY_CHUNK_BYTES]; // 固定缓冲区
+} redisClient;
+```
+
+![](./pic/4.png)
+
+当静态缓冲区用完后才会使用动态缓冲区。
+
+查看客户端状态: 
+
+```shell
+info clients # 查看客户端连接状态
+client list # 获取所有客户端的具体状态
+client setName xx # 将当前客户端名字设置为xx
+client getName # 获取当前客户端名字
+client kill ip:port # 关闭对应客户端
+client pause 时间(毫秒) # 将所有客户端堵塞对应毫秒数，期间所有命令都将被阻塞
+```
+
+其中client list获得的数据中，flag可以用来查看当前client的类型。
+
+![](./pic/5.png)
+
+客户端中还有许多相关配置
+
+* timeout 客户端空闲时间(idle)超过对应时间则关闭客户端
+* maxclients 客户端最大连接数
+* tcp-keepalive 检测TCP连接性，建议为60，即60秒检测一次
+
+
+## 持久化
+
+由于Redis是内存数据库，当数据库关闭时，所有数据都将消失。持久化使得数据写在硬盘中，这样即使Redis重启后还保留之前都数据。
+
+```shell
+save # save命令将主动以RDB格式进行持久化，过程中会被阻塞
+bgsave # 背景持久化的方式，Redis创建子进程来进行持久化，结束后杀掉子进程
+```
+
+使用`bgsave`的方式只有fork过程会被阻塞，不过fork的过程是重量级的，正常情况可以设定一个时间执行`bgsave`来进行备份，但RDB文件各个Redis可能不兼容。
+
+![](./pic/6.png)
+
+
+##### AOF的方式进行持久化
+
+AOF使用缓存命令的方式来进行持久化，当重启服务器时重新执行命令来进行恢复。
+
+![](./pic/7.png)
+
+
 
 
 
