@@ -1,0 +1,29 @@
+2228:C 31 Jul 2021 17:42:28.624 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2228:C 31 Jul 2021 17:42:28.624 # Redis version=6.2.5, bits=64, commit=00000000, modified=0, pid=2228, just started
+2228:C 31 Jul 2021 17:42:28.624 # Configuration loaded
+2228:M 31 Jul 2021 17:42:28.625 * Increased maximum number of open files to 10032 (it was originally set to 256).
+2228:M 31 Jul 2021 17:42:28.626 * monotonic clock: POSIX clock_gettime
+2228:M 31 Jul 2021 17:42:28.626 * Running mode=standalone, port=6379.
+2228:M 31 Jul 2021 17:42:28.626 # Server initialized
+2228:M 31 Jul 2021 17:42:28.627 * Ready to accept connections
+2228:M 31 Jul 2021 17:46:55.980 * Replica 127.0.0.1:6380 asks for synchronization
+2228:M 31 Jul 2021 17:46:55.980 * Full resync requested by replica 127.0.0.1:6380
+2228:M 31 Jul 2021 17:46:55.980 * Replication backlog created, my new replication IDs are '0d35cb082ef86488cfdb950d44bb3b3f8a34b572' and '0000000000000000000000000000000000000000'
+2228:M 31 Jul 2021 17:46:55.981 * Starting BGSAVE for SYNC with target: disk
+2228:M 31 Jul 2021 17:46:55.981 * Background saving started by pid 3070
+3070:C 31 Jul 2021 17:46:55.981 * DB saved on disk
+2228:M 31 Jul 2021 17:46:56.059 * Background saving terminated with success
+2228:M 31 Jul 2021 17:46:56.060 * Synchronization with replica 127.0.0.1:6380 succeeded
+2228:M 31 Jul 2021 17:47:01.286 * Replica 127.0.0.1:6381 asks for synchronization
+2228:M 31 Jul 2021 17:47:01.286 * Full resync requested by replica 127.0.0.1:6381
+2228:M 31 Jul 2021 17:47:01.287 * Starting BGSAVE for SYNC with target: disk
+2228:M 31 Jul 2021 17:47:01.287 * Background saving started by pid 3103
+3103:C 31 Jul 2021 17:47:01.288 * DB saved on disk
+2228:M 31 Jul 2021 17:47:01.328 * Background saving terminated with success
+2228:M 31 Jul 2021 17:47:01.328 * Synchronization with replica 127.0.0.1:6381 succeeded
+2228:signal-handler (1627725570) Received SIGTERM scheduling shutdown...
+2228:M 31 Jul 2021 17:59:30.918 # User requested shutdown...
+2228:M 31 Jul 2021 17:59:30.919 * Saving the final RDB snapshot before exiting.
+2228:M 31 Jul 2021 17:59:30.919 * DB saved on disk
+2228:M 31 Jul 2021 17:59:30.920 * Removing the pid file.
+2228:M 31 Jul 2021 17:59:30.920 # Redis is now ready to exit, bye bye...

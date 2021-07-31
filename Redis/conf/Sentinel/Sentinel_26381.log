@@ -1,0 +1,34 @@
+3963:X 31 Jul 2021 17:55:21.689 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+3963:X 31 Jul 2021 17:55:21.689 # Redis version=6.2.5, bits=64, commit=00000000, modified=0, pid=3963, just started
+3963:X 31 Jul 2021 17:55:21.689 # Configuration loaded
+3963:X 31 Jul 2021 17:55:21.690 * Increased maximum number of open files to 10032 (it was originally set to 256).
+3963:X 31 Jul 2021 17:55:21.690 * monotonic clock: POSIX clock_gettime
+3963:X 31 Jul 2021 17:55:21.691 * Running mode=sentinel, port=26381.
+3963:X 31 Jul 2021 17:55:21.692 # Sentinel ID is bfd5c3dfa5033d4ac826c3b4db2a45f7cf12e7ae
+3963:X 31 Jul 2021 17:55:21.692 # +monitor master mymaster 127.0.0.1 6379 quorum 2
+3963:X 31 Jul 2021 17:55:21.693 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 17:55:21.694 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 17:55:21.766 * +sentinel sentinel c3fd3475fe0f64ee6cf566a303442830ccb8ca9a 127.0.0.1 26379 @ mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 17:55:22.055 * +sentinel sentinel 87a96325de377fd90f7b3900a610fd54bea27615 127.0.0.1 26380 @ mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:00.988 # +sdown master mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:01.061 # +odown master mymaster 127.0.0.1 6379 #quorum 2/2
+3963:X 31 Jul 2021 18:00:01.061 # +new-epoch 1
+3963:X 31 Jul 2021 18:00:01.061 # +try-failover master mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:01.062 # +vote-for-leader bfd5c3dfa5033d4ac826c3b4db2a45f7cf12e7ae 1
+3963:X 31 Jul 2021 18:00:01.065 # c3fd3475fe0f64ee6cf566a303442830ccb8ca9a voted for bfd5c3dfa5033d4ac826c3b4db2a45f7cf12e7ae 1
+3963:X 31 Jul 2021 18:00:01.066 # 87a96325de377fd90f7b3900a610fd54bea27615 voted for bfd5c3dfa5033d4ac826c3b4db2a45f7cf12e7ae 1
+3963:X 31 Jul 2021 18:00:01.153 # +elected-leader master mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:01.153 # +failover-state-select-slave master mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:01.210 # +selected-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:01.211 * +failover-state-send-slaveof-noone slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:01.296 * +failover-state-wait-promotion slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:02.046 # +promoted-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:02.046 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:02.107 * +slave-reconf-sent slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:03.093 * +slave-reconf-inprog slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:03.093 * +slave-reconf-done slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:03.184 # +failover-end master mymaster 127.0.0.1 6379
+3963:X 31 Jul 2021 18:00:03.184 # +switch-master mymaster 127.0.0.1 6379 127.0.0.1 6380
+3963:X 31 Jul 2021 18:00:03.184 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+3963:X 31 Jul 2021 18:00:03.184 * +slave slave 127.0.0.1:6379 127.0.0.1 6379 @ mymaster 127.0.0.1 6380
+3963:X 31 Jul 2021 18:00:33.255 # +sdown slave 127.0.0.1:6379 127.0.0.1 6379 @ mymaster 127.0.0.1 6380

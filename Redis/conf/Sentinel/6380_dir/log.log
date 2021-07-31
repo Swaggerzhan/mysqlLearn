@@ -1,0 +1,126 @@
+3067:C 31 Jul 2021 17:46:55.976 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+3067:C 31 Jul 2021 17:46:55.976 # Redis version=6.2.5, bits=64, commit=00000000, modified=0, pid=3067, just started
+3067:C 31 Jul 2021 17:46:55.977 # Configuration loaded
+3067:S 31 Jul 2021 17:46:55.978 * Increased maximum number of open files to 10032 (it was originally set to 256).
+3067:S 31 Jul 2021 17:46:55.978 * monotonic clock: POSIX clock_gettime
+3067:S 31 Jul 2021 17:46:55.979 * Running mode=standalone, port=6380.
+3067:S 31 Jul 2021 17:46:55.979 # Server initialized
+3067:S 31 Jul 2021 17:46:55.979 * Ready to accept connections
+3067:S 31 Jul 2021 17:46:55.979 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:46:55.979 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:46:55.980 * Non blocking connect for SYNC fired the event.
+3067:S 31 Jul 2021 17:46:55.980 * Master replied to PING, replication can continue...
+3067:S 31 Jul 2021 17:46:55.980 * Partial resynchronization not possible (no cached master)
+3067:S 31 Jul 2021 17:46:55.981 * Full resync from master: 0d35cb082ef86488cfdb950d44bb3b3f8a34b572:0
+3067:S 31 Jul 2021 17:46:56.060 * MASTER <-> REPLICA sync: receiving 175 bytes from master to disk
+3067:S 31 Jul 2021 17:46:56.060 * MASTER <-> REPLICA sync: Flushing old data
+3067:S 31 Jul 2021 17:46:56.061 * MASTER <-> REPLICA sync: Loading DB in memory
+3067:S 31 Jul 2021 17:46:56.061 * Loading RDB produced by version 6.2.5
+3067:S 31 Jul 2021 17:46:56.061 * RDB age 1 seconds
+3067:S 31 Jul 2021 17:46:56.061 * RDB memory usage when created 2.02 Mb
+3067:S 31 Jul 2021 17:46:56.062 * MASTER <-> REPLICA sync: Finished with success
+3067:S 31 Jul 2021 17:59:30.921 # Connection with master lost.
+3067:S 31 Jul 2021 17:59:30.921 * Caching the disconnected master state.
+3067:S 31 Jul 2021 17:59:30.921 * Reconnecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:30.921 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:30.922 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:31.121 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:31.121 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:31.121 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:32.134 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:32.135 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:32.135 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:33.145 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:33.145 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:33.146 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:34.156 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:34.156 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:34.156 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:35.169 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:35.170 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:35.170 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:36.183 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:36.183 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:36.183 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:37.196 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:37.197 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:37.197 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:38.210 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:38.211 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:38.211 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:39.222 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:39.222 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:39.223 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:40.238 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:40.239 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:40.239 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:41.253 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:41.253 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:41.254 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:42.266 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:42.267 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:42.267 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:43.279 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:43.280 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:43.280 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:44.292 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:44.292 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:44.292 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:45.301 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:45.301 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:45.301 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:46.308 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:46.308 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:46.308 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:47.316 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:47.316 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:47.316 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:48.327 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:48.328 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:48.328 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:49.343 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:49.343 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:49.343 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:50.354 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:50.355 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:50.355 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:51.367 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:51.368 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:51.368 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:52.381 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:52.381 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:52.382 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:53.392 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:53.393 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:53.393 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:54.406 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:54.407 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:54.407 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:55.421 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:55.421 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:55.421 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:56.432 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:56.433 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:56.433 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:57.441 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:57.442 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:57.442 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:58.453 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:58.454 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:58.454 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 17:59:59.466 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 17:59:59.467 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 17:59:59.467 # Error condition on socket for SYNC: Connection refused
+3067:S 31 Jul 2021 18:00:00.479 * Connecting to MASTER 127.0.0.1:6379
+3067:S 31 Jul 2021 18:00:00.479 * MASTER <-> REPLICA sync started
+3067:S 31 Jul 2021 18:00:00.479 # Error condition on socket for SYNC: Connection refused
+3067:M 31 Jul 2021 18:00:01.296 * Discarding previously cached master state.
+3067:M 31 Jul 2021 18:00:01.297 # Setting secondary replication ID to 0d35cb082ef86488cfdb950d44bb3b3f8a34b572, valid up to offset: 63815. New replication ID is e49a8cc4fdcff394729041572895c522cf502c95
+3067:M 31 Jul 2021 18:00:01.297 * MASTER MODE enabled (user request from 'id=10 addr=127.0.0.1:49584 laddr=127.0.0.1:6380 fd=14 name=sentinel-bfd5c3df-cmd age=280 idle=0 flags=x db=0 sub=0 psub=0 multi=4 qbuf=188 qbuf-free=44862 argv-mem=4 obl=45 oll=0 omem=0 tot-mem=62500 events=r cmd=exec user=default redir=-1')
+3067:M 31 Jul 2021 18:00:01.299 # CONFIG REWRITE executed with success.
+3067:M 31 Jul 2021 18:00:02.111 * Replica 127.0.0.1:6381 asks for synchronization
+3067:M 31 Jul 2021 18:00:02.111 * Partial resynchronization request from 127.0.0.1:6381 accepted. Sending 156 bytes of backlog starting from offset 63815.
+3067:M 31 Jul 2021 18:46:56.074 * 1 changes in 3600 seconds. Saving...
+3067:M 31 Jul 2021 18:46:56.075 * Background saving started by pid 6974
+6974:C 31 Jul 2021 18:46:56.076 * DB saved on disk
+3067:M 31 Jul 2021 18:46:56.176 * Background saving terminated with success
