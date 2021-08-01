@@ -1,31 +1,35 @@
 #include <iostream>
-extern "C"{
-#include "hiredis.h"
-}
+#include "RedisAPI/include/Redis.h"
 
 using std::cerr;
 using std::endl;
 using std::cout;
+using std::string;
+using std::to_string;
 
 int main() {
 
-
-    redisContext* redis = redisConnect("127.0.0.1", 6380);
-
-    if ( redis == nullptr ){
-        cerr << "connect to redis failed!" << endl;
-        exit(1);
-    }else {
-        cout << "success" << endl;
+    RedisAPI* redis = new RedisAPI("127.0.0.1", 6379);
+    string hashName = "testHash";
+    string key = "key";
+    string value = "value";
+    clock_t start = clock();
+    for (int i=0; i<10000; i ++){
+        string index = to_string(i);
+        redis->hset(hashName, key + index, value + index);
     }
 
-    void* ret = redisCommand(redis, "hget hash C++");
-    redisReply* res = (redisReply*)ret;
-
-    if ( res->type == REDIS_REPLY_STRING ){
-        cout << "got String" << endl;
-        cout << "res: " << res->str << endl;
+    for (int i=0; i<10000; i ++){
+        string index = to_string(i);
+        redis->hget(hashName, key + index);
     }
 
+
+    clock_t end = clock();
+
+    clock_t usedTime = end - start;
+    cout << usedTime << endl;
+
+    delete redis;
 
 }

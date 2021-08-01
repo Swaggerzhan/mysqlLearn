@@ -131,3 +131,9 @@
 3100:S 31 Jul 2021 18:47:02.031 * Background saving started by pid 6980
 6980:C 31 Jul 2021 18:47:02.032 * DB saved on disk
 3100:S 31 Jul 2021 18:47:02.132 * Background saving terminated with success
+3100:signal-handler (1627740781) Received SIGTERM scheduling shutdown...
+3100:S 31 Jul 2021 22:13:01.018 # User requested shutdown...
+3100:S 31 Jul 2021 22:13:01.018 * Saving the final RDB snapshot before exiting.
+3100:S 31 Jul 2021 22:13:01.020 * DB saved on disk
+3100:S 31 Jul 2021 22:13:01.020 * Removing the pid file.
+3100:S 31 Jul 2021 22:13:01.020 # Redis is now ready to exit, bye bye...

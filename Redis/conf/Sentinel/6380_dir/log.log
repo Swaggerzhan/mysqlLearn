@@ -124,3 +124,10 @@
 3067:M 31 Jul 2021 18:46:56.075 * Background saving started by pid 6974
 6974:C 31 Jul 2021 18:46:56.076 * DB saved on disk
 3067:M 31 Jul 2021 18:46:56.176 * Background saving terminated with success
+3067:signal-handler (1627740781) Received SIGTERM scheduling shutdown...
+3067:M 31 Jul 2021 22:13:01.021 # Connection with replica 127.0.0.1:6381 lost.
+3067:M 31 Jul 2021 22:13:01.080 # User requested shutdown...
+3067:M 31 Jul 2021 22:13:01.080 * Saving the final RDB snapshot before exiting.
+3067:M 31 Jul 2021 22:13:01.081 * DB saved on disk
+3067:M 31 Jul 2021 22:13:01.081 * Removing the pid file.
+3067:M 31 Jul 2021 22:13:01.082 # Redis is now ready to exit, bye bye...
