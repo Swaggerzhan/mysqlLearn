@@ -43,3 +43,13 @@
 17597:M 01 Aug 2021 16:45:07.655 * Background saving started by pid 20621
 20621:C 01 Aug 2021 16:45:07.658 * DB saved on disk
 17597:M 01 Aug 2021 16:45:07.756 * Background saving terminated with success
+17597:M 01 Aug 2021 16:50:08.023 * 100 changes in 300 seconds. Saving...
+17597:M 01 Aug 2021 16:50:08.024 * Background saving started by pid 21044
+21044:C 01 Aug 2021 16:50:08.032 * DB saved on disk
+17597:M 01 Aug 2021 16:50:08.128 * Background saving terminated with success
+17597:signal-handler (1627815423) Received SIGTERM scheduling shutdown...
+17597:M 01 Aug 2021 18:57:03.227 # User requested shutdown...
+17597:M 01 Aug 2021 18:57:03.228 * Saving the final RDB snapshot before exiting.
+17597:M 01 Aug 2021 18:57:03.236 * DB saved on disk
+17597:M 01 Aug 2021 18:57:03.236 * Removing the pid file.
+17597:M 01 Aug 2021 18:57:03.236 # Redis is now ready to exit, bye bye...
